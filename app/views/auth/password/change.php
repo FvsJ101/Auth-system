@@ -1,6 +1,6 @@
 {% extends 'templates/default.php' %}
 
-{% block title %}Profile Update{% endblock %}
+{% block title %}Change Password{% endblock %}
 
 {% block content %}
 <form action="{{ urlFor('password.change.post') }}" method="post">

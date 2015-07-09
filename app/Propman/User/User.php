@@ -14,6 +14,7 @@ class User extends Eloquent
         'username',
         'password',
         'active',
+        'recover_hash',
         'active_hash',
         'remember_identifier',
         'remember_token',

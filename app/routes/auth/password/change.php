@@ -38,7 +38,7 @@ $app->post('/change-password', $autheticated(), function () use($app) {
         $app->flash('global', 'Your password is Updated!');
         $app->response->redirect($app->urlFor('home'));
     }
-
+    /// output any validation errors
     $app->render('auth/password/change.php', array(
         'errors' =>  $v->errors()
     ));
