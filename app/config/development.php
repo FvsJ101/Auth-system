@@ -29,8 +29,8 @@ return array(
         'smtp_auth'   => true,
         'smtp_secure' => 'tls',
         'host'        => 'smtp.gmail.com',
-        'username'    => 'FvsJ101@gmail.com',
-        'password'    => 'ralfisdom',
+        'username'    => '',
+        'password'    => '',
         'port'        => 587,
         'html'        => true
     ),

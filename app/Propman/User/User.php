@@ -11,6 +11,8 @@ class User extends Eloquent
     protected $fillable = array(
         // there are any other fields that needs updating indcate them here
         'email',
+        'first_name',
+        'last_name',
         'username',
         'password',
         'active',

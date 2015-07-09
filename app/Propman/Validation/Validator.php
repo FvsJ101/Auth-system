@@ -40,6 +40,11 @@ class Validator extends Violin
     {
         $user = $this->user->where('email', $value);
 
+        if ($this->auth && $this->auth->email === $value ) {
+            return true;
+        }
+
+
         if ($user->count()) {
             return false;
         }
