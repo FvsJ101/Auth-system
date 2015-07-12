@@ -15,7 +15,7 @@
         {% if errors.has('first_name') %} {{ errors.first('first_name') }} {% endif %}
     </div>
     <div>
-        <label for="last_name">Confirm Password</label>
+        <label for="last_name">Suranme</label>
         <input type="text" name="last_name" id="last_name" value="{{ request.post('last_name') ? request.post('last_name') : auth.last_name}}"/>
         {% if errors.has('last_name') %} {{ errors.first('last_name') }} {% endif %}
     </div>
