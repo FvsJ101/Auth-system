@@ -24,8 +24,8 @@ $app->post('/login', function () use ($app) {
     if ($v->passes()) {
         $user = $app->user
             ->where('username',$identifier )
-            ->orWhere('email', $identifier)
             ->where('active', true)
+            ->orWhere('email', $identifier)
             ->first();
 
         if ($user && $app->hash->passwordCheck($password, $user->password)) {
